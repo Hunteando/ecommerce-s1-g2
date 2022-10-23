@@ -21,7 +21,7 @@ function Contact() {
   };
 
   return (
-    <div className="px-6 flex flex-col items-center min-h-screen pt-6 sm:justify-center sm:pt-0 bg-gray-50">
+    <div className="px-6 flex flex-col items-center min-h-screen pt-6 sm:justify-center sm:pt-0">
       <div className="text-left">
         <h2 className="font-medium text-xl mb-1 uppercase">Contacto</h2>
         <p className="leading-5">¿Necesitás hablar con nosotros?</p>
