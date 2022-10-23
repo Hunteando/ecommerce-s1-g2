@@ -1,7 +1,9 @@
+import Contact from "./pages/Contact";
+
 function App() {
   return (
     <div className="App">
-      <h1>Prueba</h1>
+      <Contact />
     </div>
   );
 }
