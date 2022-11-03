@@ -54,7 +54,7 @@ function Contact() {
                 type="email"
                 id="email"
                 required
-                className="bg-slate-200 block block w-full mt-1 border-gray-300 rounded-sm shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+                className="bg-slate-200 block w-full mt-1 border-gray-300 rounded-sm shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
               />
             </div>
           </div>
@@ -68,7 +68,7 @@ function Contact() {
                 type="number"
                 id="phone"
                 required
-                className="bg-slate-200 block block w-full mt-1 border-gray-300 rounded-sm shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+                className="bg-slate-200 block w-full mt-1 border-gray-300 rounded-sm shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
               />
             </div>
           </div>
@@ -81,8 +81,7 @@ function Contact() {
                 onChange={onMutate}
                 type="text"
                 id="message"
-                required
-                className="min-h-40	 bg-slate-200 block block w-full mt-1 border-gray-300 rounded-sm shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+                className="min-h-40	 bg-slate-200 block w-full mt-1 border-gray-300 rounded-sm shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
               />
             </div>
           </div>
@@ -90,7 +89,7 @@ function Contact() {
           <div className="flex items-center justify-end mt-4">
             <button
               type="submit"
-              className="bg-slate-500 inline-flex items-center px-4 py-2 ml-4 text-xs font-semibold tracking-widest text-white uppercase transition duration-150 ease-in-out bg-gray-900 border border-transparent rounded-md active:bg-gray-900 false"
+              className="bg-slate-500 inline-flex items-center px-4 py-2 ml-4 text-xs font-semibold tracking-widest text-white uppercase transition duration-150 ease-in-out border border-transparent rounded-md active:bg-gray-900 false"
             >
               Enviar mensaje
             </button>
