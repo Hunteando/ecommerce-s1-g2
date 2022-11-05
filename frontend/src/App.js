@@ -7,12 +7,12 @@ import Nosotros from "./pages/Nosotros";
 
 function App() {
   return (
-    <div className="bg-gray-50">
+    <div>
       <Navbar />
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/menu" element={<Menu />} />
+          <Route path="/category/:menuType" element={<Menu />} />
           <Route path="/nuestros-productos" element={<NuestrosProductos />} />
           <Route path="/nosotros" element={<Nosotros />} />
         </Routes>

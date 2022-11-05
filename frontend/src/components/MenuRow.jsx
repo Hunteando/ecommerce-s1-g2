@@ -1,5 +1,5 @@
 import { AiOutlineArrowRight } from "react-icons/ai";
-import ProductCard from "./ProductCard";
+import RowProductCard from "./RowProductCard";
 import { Link } from "react-router-dom";
 import { WindowSizeHook } from "../helpers/WindowSizeHook";
 
@@ -8,22 +8,19 @@ function MenuRow({ title, routePath }) {
 
   return (
     <div className="px-6 md:mt-10 max-w-5xl mx-auto">
-      <div className="flex flex-row justify-between mb-1">
+      <div className="flex flex-row justify-between">
         {width < 768 && (
           <>
             <p className="font-medium text-xl mb-1 uppercase">{title}</p>
-            <div className="flex items-center">
-              <Link to={`/${routePath}`}>
-                <p className="mr-2">Ver todo</p>
-              </Link>
+            <Link to="/category/menu" className="flex items-center">
+              <p className="mr-2">Ver todo</p>
               <AiOutlineArrowRight />
-            </div>
+            </Link>
           </>
         )}
       </div>
-
       <div>
-        <ProductCard routePath={routePath} />
+        <RowProductCard routePath={routePath} />
       </div>
     </div>
   );

@@ -1,5 +1,5 @@
 import Slider from "./../components/Slider";
-import ProductsRow from "./../components/ProductsRow";
+import ProductsRow from "../components/NuestrosProductosRow";
 import Contact from "./../components/Contact";
 import MenuRow from "./../components/MenuRow";
 import image2 from "../assests/images/image1.jpg";
