@@ -1,8 +1,7 @@
 import arrayProducts from "../arrayProducts/arrayProducts";
 import CardProduct from "../components/CardProduct";
 import { AiOutlineArrowLeft } from "react-icons/ai";
-import { useNavigate } from "react-router-dom";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 
 // pedido al backend para traer todos los productos
 
@@ -19,7 +18,6 @@ function Menu() {
   } else {
     arrayProductsFiltered = arrayProducts.filter((item) => item.category === menuType);
   }
-
 
   return (
     <div>
