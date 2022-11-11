@@ -1,9 +1,10 @@
-
+import paginanoencontrada from "../assests/images/paginanoencontrada.jpg";
 
 function Notfound() {
   return (
     <div>
-      <h1>404 Error esta pagina no se encuentra</h1>
+      <img  src={paginanoencontrada}
+      />
     </div>
   );
 }

@@ -9,6 +9,7 @@ import Footer from "../components/Footer";
 //imagenes
 import image2 from "../assests/images/image1.jpg";
 
+
 function Home() {
   return (
     <div>
