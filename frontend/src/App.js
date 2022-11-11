@@ -1,6 +1,10 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+//componentes:
 import Navbar from "./components/Navbar";
 import Whatsapp from "./components/Whatsapp";
+
+//subpaginas:
 import Home from "./pages/Home";
 import Menu from "./pages/Menu";
 import NuestrosProductos from "./pages/NuestrosProductos";
@@ -25,6 +29,7 @@ function App() {
       </BrowserRouter>
       {/* footer */}
 
+      
     {/* watsapp */}
       <Whatsapp/>
     </div>

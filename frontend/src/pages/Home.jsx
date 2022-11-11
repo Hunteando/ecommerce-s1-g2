@@ -1,7 +1,12 @@
+
+// componentes
 import Slider from "../components/Slider";
 import ProductsRow from "../components/NuestrosProductosRow";
 import Contact from "../components/Contact";
 import MenuRow from "../components/MenuRow";
+import Footer from "../components/Footer";
+
+//imagenes
 import image2 from "../assests/images/image1.jpg";
 
 function Home() {
@@ -43,6 +48,9 @@ function Home() {
         </div>
       </div>
       <Contact />
+
+      <Footer />
+
     </div>
   );
 }
