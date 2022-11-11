@@ -7,6 +7,7 @@ import Whatsapp from "./components/Whatsapp";
 //subpaginas:
 import Home from "./pages/Home";
 import Menu from "./pages/Menu";
+
 import NuestrosProductos from "./pages/NuestrosProductos";
 import Nosotros from "./pages/Nosotros";
 import AgregarProducto from "./pages/AgregarProducto";

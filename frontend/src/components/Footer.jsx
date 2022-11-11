@@ -74,7 +74,12 @@ function footer() {
                           <img className="bank" src={ubicacion} alt="ubicacion"/>
                             <h1 className="bank">Temuco,Chile</h1>
                           <img className="bank" src={telefono} alt="telefono"/>
-                            <h1 className="bank">+56979432938</h1>
+                          <a href="tel:979432938">
+                            <h1 className="bank">
+                                +56 979432938
+                            </h1>
+                          </a>
+
                           <img className="bank" src={email} alt="email"/>
                             <h1 className="bank">sinaisb1610@gmail.com</h1>
 
