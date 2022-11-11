@@ -12,12 +12,16 @@ import Nosotros from "./pages/Nosotros";
 import AgregarProducto from "./pages/AgregarProducto";
 import EditarProducto from "./pages/EditarProducto";
 
+//Pagina no encontrada:
+import Notfound from './pages/Notfound'
+
 function App() {
   return (
     <div>
       <Navbar />
       <BrowserRouter>
         <Routes>
+          <Route path="*" element={<Notfound/>}/>
           <Route path="/" element={<Home />} />
           <Route path="/category/:menuType" element={<Menu />} />
           <Route path="/nuestros-productos" element={<NuestrosProductos />} />
