@@ -24,6 +24,8 @@ function App() {
         </Routes>
       </BrowserRouter>
       {/* footer */}
+
+    {/* watsapp */}
       <Whatsapp/>
     </div>
   );
