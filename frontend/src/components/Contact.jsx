@@ -38,7 +38,7 @@ function Contact() {
         <form onSubmit={onSubmit}>
           <div>
             <label className="block text-sm md:text-xl font-medium text-gray-700 undefined">
-              Tu nombre
+              su nombre
             </label>
             <div className=" flex flex-col items-start">
               <input
