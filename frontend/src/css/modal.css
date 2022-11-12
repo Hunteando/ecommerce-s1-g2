@@ -37,5 +37,21 @@
 	color: #fff;
 	font-size: 15px;
 	cursor: pointer;
+	transform: translateY(-30%);
+}
 
+.lbl-modal{
+	background: transparent;
+	padding: 10px 15px;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+#btn-modal:checked ~ .modal{
+	opacity: 1;
+	visibility: visible;
+}
+
+#btn-modal:checked ~ .modal .contenedor{
+	transform: translateY(0%);
 }
