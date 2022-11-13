@@ -1,9 +1,6 @@
 
 // componentes
 
-// Boton iniciar seccion Usuario Modal
-import Modal from "../components/Modal";
-
 // componente slider
 import Slider from "../components/Slider";
 
@@ -26,11 +23,7 @@ function Home() {
 
   return (
     <div>
-
-    <div>
-      <Modal/>
-    </div>
-
+    
       <Slider />
 
       <MenuRow title="MENÚ" routePath="menu" />

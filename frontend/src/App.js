@@ -8,6 +8,9 @@ import Whatsapp from "./components/Whatsapp";
 import Home from "./pages/Home";
 import Menu from "./pages/Menu";
 
+// Registro usuario
+import Registro from "./pages/Registro";
+
 import NuestrosProductos from "./pages/NuestrosProductos";
 import Nosotros from "./pages/Nosotros";
 import AgregarProducto from "./pages/AgregarProducto";
@@ -24,6 +27,7 @@ function App() {
         <Routes>
           <Route path="*" element={<Notfound/>}/>
           <Route path="/" element={<Home />} />
+          <Route path="/Registro" element={<Registro />} />
           <Route path="/category/:menuType" element={<Menu />} />
           <Route path="/nuestros-productos" element={<NuestrosProductos />} />
           <Route path="/agregar-producto" element={<AgregarProducto />} />
