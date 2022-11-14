@@ -40,14 +40,18 @@ function footer() {
                 </div>
               </div>
 
-              <div className="item" id="item2">
-                     <p className="weare"> 
+              <div class="grid grid-flow-row-dense grid-cols-3 grid-rows-3 ...">
+                <div class="col-span-2">&nbsp;</div>
+                <div class="col-span-2">&nbsp;</div>
+              </div>
+                
+          <div class="flex flex-col-reverse ...">
+            <div> 
+              <p className="weare"> 
                      nosotros
                      </p>
-                  </div> 
 
-                  <div className="item" id="item3">
-                            <p className="social">Redes Sociales</p>
+                      <p className="social">Redes Sociales</p>
 
                       <a
                         href="https://www.instagram.com/masamia.cl/">
@@ -66,25 +70,32 @@ function footer() {
                       <img className="socialmedia" src={nombredelaimagen} alt="nombre de la imagen y/o foto"/>
                       <img className="socialmedia" src={nombredelaimagen} alt="nombre de la imagen y/o foto"/>*/
                     }
+                <div>
+                  <img className="bank" src={ubicacion} alt="ubicacion"/>
+                               
+                </div> 
 
-                  </div>
-                        
-                        <div className="item" id="item4">
-                          <p className="contacto">Contacto</p>
-                          <img className="bank" src={ubicacion} alt="ubicacion"/>
-                            <h1 className="bank">Temuco,Chile</h1>
-                          <img className="bank" src={telefono} alt="telefono"/>
+                <div>
+                    <h1 className="bank">Temuco,Chile</h1>
+                </div>
+
+                <div>
+                    <img className="bank" src={telefono} alt="telefono"/>
                           <a href="tel:979432938">
                             <h1 className="bank">
                                 +56 979432938
                             </h1>
                           </a>
+                </div>
 
-                          <img className="bank" src={email} alt="email"/>
-                            <h1 className="bank">sinaisb1610@gmail.com</h1>
+                    <div>
+                      <img className="bank" src={email} alt="email"/>
+                        <h1 className="bank">sinaisb1610@gmail.com</h1>
+                  </div>
 
-                        </div> 
-        </div>
+                  </div>
+                </div>   
+            </div>
 		</>
 		);
 }
