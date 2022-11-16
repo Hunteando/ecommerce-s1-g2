@@ -1,5 +1,7 @@
 import React from "react";
 
+
+
 import { Button} from "@material-tailwind/react";
 
 export default function Modal() {
@@ -108,7 +110,7 @@ export default function Modal() {
                 <div class="flex justify-evenly ...">
                   <div>&nbsp;</div>
                   <div>
-                     <a href="#" className="font-medium text-indigo-600 hover:text-indigo-500">
+                     <a href="/olvide" className="font-medium text-indigo-600 hover:text-indigo-500">
                        Olvide contraseña?
                      </a> 
                   </div>
