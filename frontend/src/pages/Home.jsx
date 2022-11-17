@@ -2,6 +2,8 @@
 // componentes
 
 // componente slider
+import Navbar from "../components/Navbar";
+
 import Slider from "../components/Slider";
 
 import ProductsRow from "../components/NuestrosProductosRow";
@@ -9,6 +11,9 @@ import ProductsRow from "../components/NuestrosProductosRow";
 import Contact from "../components/Contact";
 
 import MenuRow from "../components/MenuRow";
+
+//componente watsapp
+import Whatsapp from "../components/Whatsapp";
 
 //Footer
 import Footer from "../components/Footer";
@@ -23,7 +28,9 @@ function Home() {
 
   return (
     <div>
-    
+      
+      <Navbar /> 
+
       <Slider />
 
       <MenuRow title="MENÚ" routePath="menu" />
@@ -64,6 +71,8 @@ function Home() {
       </div>
       
       <Contact />
+
+      <Whatsapp/>
 
       <Footer />
 

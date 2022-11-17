@@ -1,9 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-//componentes:
-import Navbar from "./components/Navbar";
-import Whatsapp from "./components/Whatsapp";
-
 //subpaginas:
 import Home from "./pages/Home";
 import Menu from "./pages/Menu";
@@ -23,12 +19,11 @@ import Notfound from './pages/Notfound'
 function App() {
   return (
     <div>
-      <Navbar />
       <BrowserRouter>
         <Routes>
           <Route path="*" element={<Notfound/>}/>
           <Route path="/" element={<Home />} />
-          <Route path="/Registro" element={<Registro />} />
+          <Route path="/registro" element={<Registro />} />
           <Route path="/olvide" element={<Olvide />} />
           <Route path="/category/:menuType" element={<Menu />} />
           <Route path="/nuestros-productos" element={<NuestrosProductos />} />
@@ -38,11 +33,6 @@ function App() {
           <Route path="/nosotros" element={<Nosotros />} />
         </Routes>
       </BrowserRouter>
-      {/* footer */}
-
-      
-    {/* watsapp */}
-      <Whatsapp/>
     </div>
   );
 }

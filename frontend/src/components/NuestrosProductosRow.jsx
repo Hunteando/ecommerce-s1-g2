@@ -8,6 +8,7 @@ function NuestrosProductosRow({ title, routePath }) {
 
   return width > 768 ? null : (
     <div className="px-6">
+
       <div className="flex flex-row justify-between mb-1">
         <p className="font-medium text-xl mb-1 uppercase">{title}</p>
         <div className="flex items-center">
