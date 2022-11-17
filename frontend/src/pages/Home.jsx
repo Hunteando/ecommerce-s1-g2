@@ -1,7 +1,7 @@
 
 // componentes
 
-// componente slider
+// componente navbar
 import Navbar from "../components/Navbar";
 
 import Slider from "../components/Slider";
