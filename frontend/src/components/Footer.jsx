@@ -1,103 +1,86 @@
-import '../css/footer.css';
+import "../css/footer.css";
 
 //imagenes bancos:
-import visa from '../assests/images/visa.png';
-import mastercard from '../assests/images/mastercard.png';
-import american from '../assests/images/american.png';
-import dinersclub from '../assests/images/dinersclub.png';
+import visa from "../assests/images/visa.png";
+import mastercard from "../assests/images/mastercard.png";
+import american from "../assests/images/american.png";
+import dinersclub from "../assests/images/dinersclub.png";
 
 // Redes sociales:
-import instagram from '../assests/images/instagram.png';
-import meta from '../assests/images/meta.png';
+import instagram from "../assests/images/instagram.png";
+import meta from "../assests/images/meta.png";
 
 //contacto:
-import ubicacion from '../assests/images/ubicacion.png';
-import telefono from '../assests/images/telefono.png';
-import email from '../assests/images/email.png';
+import ubicacion from "../assests/images/ubicacion.png";
+import telefono from "../assests/images/telefono.png";
+import email from "../assests/images/email.png";
 
 //logo
-import sage from '../assests/images/sage.png';
+import sage from "../assests/images/sage.png";
 
 function footer() {
-	return(
-		<>
-			<div className="container">
+  return (
+    <>
+      <div className="container">
+        <div className="item" id="item1">
+          <img className="logo" src={sage} alt="sage" />
 
-              <div className="item" id="item1">
-                      
-              
-                        <img className="logo" src={sage} alt="sage"/>
-                        
+          <p className="pay">Medios de pago</p>
 
-                <p className="pay">Medios de pago</p>
+          <div className="paymentmethods">
+            <img className="bank" src={visa} alt="visa" />
+            <img className="bank" src={mastercard} alt="mastercard" />
+            <img className="bank" src={american} alt="american" />
+            <img className="bank" src={dinersclub} alt="dinersclub" />
+          </div>
+        </div>
 
-                <div className="paymentmethods">
+        <div className="grid grid-flow-row-dense grid-cols-3 grid-rows-3 ...">
+          <div className="col-span-2">&nbsp;</div>
+          <div className="col-span-2">&nbsp;</div>
+        </div>
 
-                   <img className="bank" src={visa} alt="visa"/>
-                    <img className="bank" src={mastercard} alt="mastercard"/>
-                     <img className="bank" src={american} alt="american"/>
-                      <img className="bank" src={dinersclub} alt="dinersclub"/>
-                </div>
-              </div>
+        <div className="flex flex-col-reverse ...">
+          <div>
+            <p className="weare">nosotros</p>
 
-              <div class="grid grid-flow-row-dense grid-cols-3 grid-rows-3 ...">
-                <div class="col-span-2">&nbsp;</div>
-                <div class="col-span-2">&nbsp;</div>
-              </div>
-                
-          <div class="flex flex-col-reverse ...">
-            <div> 
-              <p className="weare"> 
-                     nosotros
-                     </p>
+            <p className="social">Redes Sociales</p>
 
-                      <p className="social">Redes Sociales</p>
+            <a href="https://www.instagram.com/masamia.cl/">
+              <img className="bank" src={instagram} alt="instagram" />
+            </a>
 
-                      <a
-                        href="https://www.instagram.com/masamia.cl/">
+            <a href="https://www.facebook.com/masamia.cl">
+              <img className="socialmedia" src={meta} alt="meta" />
+            </a>
 
-                        <img className="bank" src={instagram} alt="instagram"/>
-
-                      </a>
-
-                      <a href="https://www.facebook.com/masamia.cl">
-
-                        <img className="socialmedia" src={meta} alt="meta"/>
-
-                      </a>
-
-                      {/* Aquí lo que quieres comentar  
+            {/* Aquí lo que quieres comentar  
                       <img className="socialmedia" src={nombredelaimagen} alt="nombre de la imagen y/o foto"/>
-                      <img className="socialmedia" src={nombredelaimagen} alt="nombre de la imagen y/o foto"/>*/
-                    }
-                <div>
-                  <img className="bank" src={ubicacion} alt="ubicacion"/>
-                               
-                </div> 
-
-                <div>
-                    <h1 className="bank">Temuco,Chile</h1>
-                </div>
-
-                <div>
-                    <img className="bank" src={telefono} alt="telefono"/>
-                          <a href="tel:979432938">
-                            <h1 className="bank">
-                                +56 979432938
-                            </h1>
-                          </a>
-                </div>
-
-                    <div>
-                      <img className="bank" src={email} alt="email"/>
-                        <h1 className="bank">sinaisb1610@gmail.com</h1>
-                  </div>
-
-                  </div>
-                </div>   
+                      <img className="socialmedia" src={nombredelaimagen} alt="nombre de la imagen y/o foto"/>*/}
+            <div>
+              <img className="bank" src={ubicacion} alt="ubicacion" />
             </div>
-		</>
-		);
+
+            <div>
+              <h1 className="bank">Temuco,Chile</h1>
+            </div>
+
+            <div>
+              <img className="bank" src={telefono} alt="telefono" />
+              <a href="tel:979432938">
+                <h1 className="bank">+56 979432938</h1>
+              </a>
+            </div>
+
+            <div>
+              <img className="bank" src={email} alt="email" />
+              <h1 className="bank">sinaisb1610@gmail.com</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
 }
 
 export default footer;
