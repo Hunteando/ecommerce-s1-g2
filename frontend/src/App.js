@@ -29,7 +29,6 @@ function App() {
           <Route path="/nuestros-productos" element={<NuestrosProductos />} />
           <Route path="/agregar-producto" element={<AgregarProducto />} />
           <Route path="/editar-producto" element={<EditarProducto />} />
-          <Route path="/editar-producto" element={<EditarProducto />} />
           <Route path="/nosotros" element={<Nosotros />} />
         </Routes>
       </BrowserRouter>

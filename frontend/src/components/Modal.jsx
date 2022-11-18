@@ -14,8 +14,8 @@ export default function Modal() {
         type="button"
         onClick={() => setShowModal(true)}
       >
-        <svg class="w-6 h-6  hover:text-indigo-200 " fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path   stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+        <svg className="w-6 h-6  hover:text-indigo-200 " fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path  strokeWidth="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
             </svg>
       </Button>
 
@@ -29,7 +29,7 @@ export default function Modal() {
               {/*content*/} 
               <div className="border-0  shadow-lg relative flex flex-col  bg-white outline-none focus:outline-none">
      
-              <div class="grid grid-cols-2 gap-4 ...">
+              <div className="grid grid-cols-2 gap-4 ...">
                     <div className="place-self-auto self-start ">
                         <h2 className=" mt-3 text-3xl font-bold tracking-tight text-gray-900 indent-8">
                           Iniciar sesión
@@ -53,7 +53,7 @@ export default function Modal() {
 
             <input type="hidden" name="remember" defaultValue="true" />
                  
-                <div class="grid gap-x-8 gap-y-4  flex justify-center ">
+                <div className="grid gap-x-8 gap-y-4  flex justify-center ">
 
                     <div>
                         <label htmlFor="email-address" className="sr-only">
@@ -99,7 +99,7 @@ export default function Modal() {
                     </div>
                   </div>
 
-                  <div class="flex justify-between ...">
+                  <div className="flex justify-between ...">
                     <div>&nbsp;</div>
                     <div>&nbsp;</div>
                     <div>&nbsp;</div>

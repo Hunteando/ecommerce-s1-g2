@@ -25,7 +25,7 @@ function Slider() {
             disableOnInteraction: false,
             pauseOnMouseEnter: true,
           }}
-          className="mb-6"
+          className="mb-6 -z-10"
         >
           <SwiperSlide>
             <div
