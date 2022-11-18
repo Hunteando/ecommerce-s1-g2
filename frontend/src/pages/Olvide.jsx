@@ -2,15 +2,19 @@ import walink from "../assests/images/arrow-left-solid.svg";
 
 import { Input } from "@material-tailwind/react";
 
+
+//componente Link de react:
+import { Link } from "react-router-dom";
+
 export default function Olvide() {
   return (
     <>
     <div class="min-[320px]:text-center max-[600px]:bg-sky-300 h-56 grid grid-cols-3 gap-4 content-around ...">
     
       <div>
-        <a href="/">
+        <Link to="/">
           <img className="h-10 w-10" src={walink} alt="walink"/>
-        </a>
+        </Link>
       </div>
       <div>&nbsp;</div>
       <div>&nbsp;</div>
