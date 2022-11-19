@@ -18,7 +18,7 @@ function Counter({ stock, onAdd, initial = 1 }) {
 
   return (
     <div>
-      <div className="flex justify-center items-center mb-1 ">
+      <div className="flex justify-center items-center">
         <button
           className="pb-1 px-2 border-solid border-r-0 border border-gray-500"
           onClick={decrease}
@@ -36,7 +36,7 @@ function Counter({ stock, onAdd, initial = 1 }) {
         </button>
       </div>
       <button
-        className="my-2 mx-auto p-2 rounded flex items-center uppercase  justify-center text-[11px] text-white bg-#primario"
+        className="mt-2 mx-auto p-2 rounded flex items-center uppercase  justify-center text-[11px] text-white bg-#primario"
         onClick={() => onAdd(count)}
       >
         <FaShoppingCart className="text-white mr-1" size={15} />
