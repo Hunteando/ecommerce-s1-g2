@@ -21,7 +21,7 @@ function Menu() {
 
   return (
     <div>
-      <div className="flex items-center max-w-[370px] mx-auto py-4 ml-8">
+      <div className="flex items-center max-w-[370px] mx-auto py-4">
         <AiOutlineArrowLeft size={18} onClick={() => navigate("/")} />
         <h2 className="font-medium uppercase ml-2 text-l">{menuTypeWithoutHyphen}</h2>
       </div>

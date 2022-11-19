@@ -52,7 +52,7 @@ function CardProduct({ data }) {
           src={data.image}
           alt="product"
         />
-        <div className="py-2 text-center bg-#F79E38/[.47]">
+        <div className="py-2 text-center bg-#secundario/[.47]">
           <h4 className="text-sm font-medium uppercase text-#231E1A">{data.name}</h4>
           <p className="mb-2 font-bold text-#231E1A">${data.price}</p>
           <Counter stock={stock} />

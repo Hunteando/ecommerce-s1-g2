@@ -36,7 +36,7 @@ function Counter({ stock, onAdd, initial = 1 }) {
         </button>
       </div>
       <button
-        className="my-2 mx-auto p-2 rounded flex items-center uppercase  justify-center text-[11px] text-white bg-#C96C26"
+        className="my-2 mx-auto p-2 rounded flex items-center uppercase  justify-center text-[11px] text-white bg-#primario"
         onClick={() => onAdd(count)}
       >
         <FaShoppingCart className="text-white mr-1" size={15} />

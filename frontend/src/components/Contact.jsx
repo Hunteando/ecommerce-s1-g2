@@ -1,4 +1,5 @@
 import { useState } from "react";
+import logoMasaMia from "../assests/images/logo-masa-mia.png";
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -22,6 +23,7 @@ function Contact() {
 
   return (
     <div className="p-6 flex flex-col gap-4 md:gap-8 justify-center pt-6 md:flex-row">
+      <img src={logoMasaMia} alt="logo masa mia" width={65} className="mx-auto" />
       <div className="text-left">
         <h2 className="font-medium text-xl mb-1 uppercase md:font-extrabold md:text-4xl">
           Contacto
@@ -34,11 +36,11 @@ function Contact() {
         </p>
       </div>
 
-      <main className="w-full mt-5 overflow-hidden md:max-w-md rounded-lg">
+      <main className="w-full mt-2 overflow-hidden md:max-w-md">
         <form onSubmit={onSubmit}>
           <div>
             <label className="block text-sm md:text-xl font-medium text-gray-700 undefined">
-              su nombre
+              Tu nombre
             </label>
             <div className=" flex flex-col items-start">
               <input
@@ -46,7 +48,7 @@ function Contact() {
                 type="text"
                 id="name"
                 required
-                className="bg-slate-200 block w-full mt-1 border-gray-300 rounded-sm shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+                className="bg-#terciario block w-full mt-1 border-b-2 border-t-0 border-x-0  border-b-#primario/[0.73]	 rounded-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
               />
             </div>
           </div>
@@ -60,7 +62,7 @@ function Contact() {
                 type="email"
                 id="email"
                 required
-                className="bg-slate-200 block w-full mt-1 border-gray-300 rounded-sm shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+                className="bg-#terciario block w-full mt-1 border-b-2 border-t-0 border-x-0  border-b-#primario/[0.73]	 rounded-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
               />
             </div>
           </div>
@@ -74,7 +76,7 @@ function Contact() {
                 type="number"
                 id="phone"
                 required
-                className="bg-slate-200 block w-full mt-1 border-gray-300 rounded-sm shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+                className="bg-#terciario block w-full mt-1 border-b-2 border-t-0 border-x-0 border-b-#primario/[0.73] rounded-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
               />
             </div>
           </div>
@@ -87,7 +89,7 @@ function Contact() {
                 onChange={onMutate}
                 type="text"
                 id="message"
-                className="min-h-40	 bg-slate-200 block w-full mt-1 border-gray-300 rounded-sm shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+                className="min-h-40 bg-#terciario border-b-2 border-t-0 border-x-0 border-b-#primario/[0.73] block w-full mt-1 border-gray-300 rounded-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
               />
             </div>
           </div>
@@ -95,7 +97,7 @@ function Contact() {
           <div className="flex items-center justify-end mt-4">
             <button
               type="submit"
-              className="bg-slate-500 inline-flex items-center px-4 py-2 ml-4 text-xs md:text-xl font-semibold tracking-widest text-white uppercase transition duration-150 ease-in-out border border-transparent rounded-md active:bg-gray-900 false"
+              className="bg-#primario inline-flex items-center px-4 py-2 ml-4 text-xs md:text-xl font-semibold tracking-widest text-white uppercase"
             >
               Enviar mensaje
             </button>
