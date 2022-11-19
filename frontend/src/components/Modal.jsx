@@ -2,6 +2,9 @@ import React from "react";
 
 import { Button} from "@material-tailwind/react";
 
+//componente Link de react:
+import { Link } from "react-router-dom";
+
 export default function Modal() {
   const [showModal, setShowModal] = React.useState(false);
   return (
@@ -90,9 +93,9 @@ export default function Modal() {
                         </button>
                     </div>
                     <div>
-                      <a href="/olvide" className="font-medium text-indigo-600 hover:text-indigo-500">
+                      <Link to="/olvide" className="font-medium text-indigo-600 hover:text-indigo-500">
                          Olvide contraseña?
-                      </a>
+                      </Link>
                     </div>
                   </div>
 

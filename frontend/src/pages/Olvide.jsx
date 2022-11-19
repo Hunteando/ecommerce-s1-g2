@@ -1,15 +1,18 @@
-import walink from "../assests/images/arrow-left-solid.svg";
+//React icons flecha
+import { FiArrowLeft } from "react-icons/fi";
 
-import { Input } from "@material-tailwind/react";
+
+//componente Link de react:
+import { Link } from "react-router-dom";
 
 export default function Olvide() {
   return (
     <>
       <div className="min-[320px]:text-center max-[600px]:bg-sky-300 h-56 grid grid-cols-3 gap-4 content-around ...">
         <div>
-          <a href="/">
-            <img className="h-10 w-10" src={walink} alt="walink" />
-          </a>
+          <Link to="/">
+            <FiArrowLeft className="h-40 w-20"/>
+          </Link>
         </div>
         <div>&nbsp;</div>
         <div>&nbsp;</div>
