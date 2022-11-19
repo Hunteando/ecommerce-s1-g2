@@ -1,12 +1,9 @@
-import React from "react";
-
-import { Button} from "@material-tailwind/react";
-
-//componente Link de react:
+import { Button } from "@material-tailwind/react";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 export default function Modal() {
-  const [showModal, setShowModal] = React.useState(false);
+  const [showModal, setShowModal] = useState(false);
   return (
     <>
       <Button
@@ -14,97 +11,102 @@ export default function Modal() {
         type="button"
         onClick={() => setShowModal(true)}
       >
-        <svg className="w-6 h-6  hover:text-indigo-200 " fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path  strokeWidth="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-            </svg>
+        <svg
+          className="w-6 h-6  hover:text-indigo-200 "
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            strokeWidth="2"
+            d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+          ></path>
+        </svg>
       </Button>
 
       {showModal ? (
-
         <>
-         <div
-            className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none"
-          >
+          <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
             <div className="relative w-auto my-6 mx-auto max-w-3xl">
-              {/*content*/} 
+              {/*content*/}
               <div className="border-0  shadow-lg relative flex flex-col  bg-white outline-none focus:outline-none">
-     
-              <div className="grid grid-cols-2 gap-4 ...">
-                    <div className="place-self-auto self-start ">
-                        <h2 className=" mt-3 text-3xl font-bold tracking-tight text-gray-900 indent-8">
-                          Iniciar sesión
-                        </h2>
-                    </div>
-                    <div className="place-items-right  flex justify-end">
-                        <button
-                            className="text-black-500  font-bold uppercase text-sm px-6 py-3  hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-                            type="button"
-                            onClick={() => setShowModal(false)}
-                          >
-                         x
-                      </button>
-                    </div>
+                <div className="grid grid-cols-2 gap-4 ...">
+                  <div className="place-self-auto self-start ">
+                    <h2 className=" mt-3 text-3xl font-bold tracking-tight text-gray-900 indent-8">
+                      Iniciar sesión
+                    </h2>
                   </div>
-
-
-                <div className="grid grid-flow-row-dense  grid-rows-2 ...">
-                    _________________________________________________________________
+                  <div className="place-items-right  flex justify-end">
+                    <button
+                      className="text-black-500  font-bold uppercase text-sm px-6 py-3  hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                      type="button"
+                      onClick={() => setShowModal(false)}
+                    >
+                      x
+                    </button>
+                  </div>
                 </div>
 
-            <input type="hidden" name="remember" defaultValue="true" />
-                 
+                <div className="grid grid-flow-row-dense  grid-rows-2 ...">
+                  _________________________________________________________________
+                </div>
+
+                <input type="hidden" name="remember" defaultValue="true" />
+
                 <div className="grid gap-x-8 gap-y-4  flex justify-center ">
+                  <div>
+                    <label htmlFor="email-address" className="sr-only">
+                      Email address
+                    </label>
 
-                    <div>
-                        <label htmlFor="email-address" className="sr-only">
-                          Email address
-                        </label>
-                         
-                        <input
-                          id="email-address"
-                          name="email"
-                          type="email"
-                          autoComplete="email"
-                          required
-                          className="relative block  appearance-none rounded rounded-t-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
-                          placeholder="Email address"
-                      />
-                    </div>
-                    <div>
-                        <label htmlFor="password" className="sr-only">
-                        Password
-                        </label>
-                       <input
-                        id="password"
-                        name="password"
-                        type="password"
-                        autoComplete="current-password"
-                        required
-                        className="relative block  appearance-none rounded-none rounded-b-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
-                        placeholder="Password"
-                       />
-                    </div>
-                    <div>
-                      <button
-                          type="submit"
-                          className="group relative flex w-min justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2; transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 ..."
-                        > 
-                          Ingresar
-                        </button>
-                    </div>
-                    <div>
-                      <Link to="/olvide" className="font-medium text-indigo-600 hover:text-indigo-500">
-                         Olvide contraseña?
-                      </Link>
-                    </div>
+                    <input
+                      id="email-address"
+                      name="email"
+                      type="email"
+                      autoComplete="email"
+                      required
+                      className="relative block  appearance-none rounded rounded-t-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
+                      placeholder="Email address"
+                    />
                   </div>
-
-                  <div className="flex justify-between ...">
-                    <div>&nbsp;</div>
-                    <div>&nbsp;</div>
-                    <div>&nbsp;</div>
+                  <div>
+                    <label htmlFor="password" className="sr-only">
+                      Password
+                    </label>
+                    <input
+                      id="password"
+                      name="password"
+                      type="password"
+                      autoComplete="current-password"
+                      required
+                      className="relative block  appearance-none rounded-none rounded-b-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
+                      placeholder="Password"
+                    />
                   </div>
+                  <div>
+                    <button
+                      type="submit"
+                      className="group relative flex w-min justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2; transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 ..."
+                    >
+                      Ingresar
+                    </button>
+                  </div>
+                  <div>
+                    <Link
+                      to="/olvide"
+                      className="font-medium text-indigo-600 hover:text-indigo-500"
+                    >
+                      Olvide contraseña?
+                    </Link>
+                  </div>
+                </div>
 
+                <div className="flex justify-between ...">
+                  <div>&nbsp;</div>
+                  <div>&nbsp;</div>
+                  <div>&nbsp;</div>
+                </div>
               </div>
             </div>
           </div>
