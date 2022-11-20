@@ -54,7 +54,7 @@ function CardProduct({ data }) {
         />
         <div className="py-2 text-center bg-#secundario/[.47]">
           <h4 className="text-sm font-medium uppercase text-#231E1A">{data.name}</h4>
-          <p className="mb-2 font-bold text-#231E1A">${data.price}</p>
+          <p className="mb-1 font-bold text-#231E1A">${data.price}</p>
           <Counter stock={stock} />
         </div>
       </div>
