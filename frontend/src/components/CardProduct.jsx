@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function CardProduct({ data }) {
   const stock = data.stock;
   return (
-    <div className="w-40 relative">
+    <div className=" w-40 relative">
       <div className="icons absolute text-white flex mt-1 mr-1 right-0 gap-2">
         <MdDelete size={20} />
         <Link to="/editar-producto">

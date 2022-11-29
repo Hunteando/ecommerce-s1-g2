@@ -19,74 +19,58 @@ import email from '../assests/images/email.png';
 import sage from '../assests/images/sage.png';
 
 function footer() {
-	return(
-		<>
-			<div className="container">
+  return (
+    <>
+      <div name="nosotros" className="container">
+        <div className="item" id="item1">
+          <img className="logo" src={sage} alt="sage" />
+          <p className="pay">Medios de pago</p>
+          <div className="paymentmethods">
 
-              <div className="item" id="item1">
-                      
-              
-                        <img className="logo" src={sage} alt="sage"/>
-                        
+            <img className="bank" src={visa} alt="visa" />
+            <img className="bank" src={mastercard} alt="mastercard" />
+            <img className="bank" src={american} alt="american" />
+            <img className="bank" src={dinersclub} alt="dinersclub" />
+          </div>
+        </div>
+        <div className="item" id="item2">
+          <p className="weare">
+            nosotros
+          </p>
+        </div>
+        <div className="item" id="item3">
+          <p className="social">Redes Sociales</p>
+          <a
+            href="https://www.instagram.com/masamia.cl/" target="blank">
+            <img className="bank" src={instagram} alt="instagram" />
+          </a>
+          <a href="https://www.facebook.com/masamia.cl" target="blank">
+            <img className="socialmedia" src={meta} alt="meta" />
+          </a>
 
-                <p className="pay">Medios de pago</p>
-
-                <div className="paymentmethods">
-
-                   <img className="bank" src={visa} alt="visa"/>
-                    <img className="bank" src={mastercard} alt="mastercard"/>
-                     <img className="bank" src={american} alt="american"/>
-                      <img className="bank" src={dinersclub} alt="dinersclub"/>
-                </div>
-              </div>
-
-              <div className="item" id="item2">
-                     <p className="weare"> 
-                     nosotros
-                     </p>
-                  </div> 
-
-                  <div className="item" id="item3">
-                            <p className="social">Redes Sociales</p>
-
-                      <a
-                        href="https://www.instagram.com/masamia.cl/">
-
-                        <img className="bank" src={instagram} alt="instagram"/>
-
-                      </a>
-
-                      <a href="https://www.facebook.com/masamia.cl">
-
-                        <img className="socialmedia" src={meta} alt="meta"/>
-
-                      </a>
-
-                      {/* Aquí lo que quieres comentar  
+          {/* Aquí lo que quieres comentar  
                       <img className="socialmedia" src={nombredelaimagen} alt="nombre de la imagen y/o foto"/>
                       <img className="socialmedia" src={nombredelaimagen} alt="nombre de la imagen y/o foto"/>*/
-                    }
+          }
 
-                  </div>
-                        
-                        <div className="item" id="item4">
-                          <p className="contacto">Contacto</p>
-                          <img className="bank" src={ubicacion} alt="ubicacion"/>
-                            <h1 className="bank">Temuco,Chile</h1>
-                          <img className="bank" src={telefono} alt="telefono"/>
-                          <a href="tel:979432938">
-                            <h1 className="bank">
-                                +56 979432938
-                            </h1>
-                          </a>
-
-                          <img className="bank" src={email} alt="email"/>
-                            <h1 className="bank">sinaisb1610@gmail.com</h1>
-
-                        </div> 
         </div>
-		</>
-		);
+        <div className="item" id="item4">
+          <p className="contacto">Contacto</p>
+          <img className="bank" src={ubicacion} alt="ubicacion" />
+          <h1 className="bank">Temuco,Chile</h1>
+          <img className="bank" src={telefono} alt="telefono" />
+          <a href="tel:979432938">
+            <h1 className="bank">
+              +56 979432938
+            </h1>
+          </a>
+          <img className="bank" src={email} alt="email" />
+          <h1 className="bank">sinaisb1610@gmail.com</h1>
+
+        </div>
+      </div>
+    </>
+  );
 }
 
 export default footer;
