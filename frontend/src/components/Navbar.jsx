@@ -1,10 +1,20 @@
 import { useState } from "react";
+<<<<<<< HEAD
 import { Link } from 'react-scroll'
 import Logo from '../assests/images/logo.png'
 import "../css/modal.css";
+=======
+
+// Boton iniciar seccion Usuario Modal
+import Modal from "../components/Modal";
+>>>>>>> b03cfbef25e3c6e832dccb6fcfcb8d3baf9ad9cb
 
 export default function NavBar() {
   const [navbar, setNavbar] = useState(false);
+
+  const [open, setOpen] = useState(false);
+
+  const handleOpen = () => setOpen(!open);
 
   return (
     <nav name='navbar' className="w-full bg-[#eec697] sticky top-0 z-10">
@@ -55,15 +65,39 @@ export default function NavBar() {
         </div>
         <div>
           <div
-            className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${navbar ? "block" : "hidden"
-              }`}
+            className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
+              navbar ? "block" : "hidden"
+            }`}
           >
-            <div class="items-center justify-center pb-6 md:pb-0 md:pt-1 md:flex">
-              <div class="relative">
-                <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
-                  <svg aria-hidden="true" class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+            <div className="items-center justify-center pb-6 md:pb-0 md:pt-1 md:flex">
+              <div className="relative">
+                <div className="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+                  <svg
+                    aria-hidden="true"
+                    className="w-5 h-5 text-gray-500 dark:text-gray-400"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                    ></path>
+                  </svg>
                 </div>
+<<<<<<< HEAD
                 <input class="placeholder:italic placeholder:text-slate-300 block bg-white w-full h-8 border border-slate-500 rounded-md pl-10 pr-60 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" placeholder="¿Que desea buscar?" type="text" name="search" />
+=======
+                <input
+                  className="placeholder:italic placeholder:text-slate-300 block bg-white w-full h-8 border border-slate-500 rounded-md pl-10 pr-60 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm"
+                  placeholder="Search for anything..."
+                  type="text"
+                  name="search"
+                />
+>>>>>>> b03cfbef25e3c6e832dccb6fcfcb8d3baf9ad9cb
               </div>
             </div>
 
@@ -98,6 +132,7 @@ export default function NavBar() {
           </div>
         </div>
 
+<<<<<<< HEAD
         <div className="hidden flex flex-row items-center pt-[-20px] md:flex">
           <a href="">
             <svg class="w-10 h-6 text-[#362e29] hover:text-[#7c2d12]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -109,9 +144,30 @@ export default function NavBar() {
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
             </svg>
           </button>
+=======
+        <div className="hidden space-x-2 md:flex">
+          <a href="#">
+            <svg
+              className="w-10 h-6 text-gray-200 hover:text-indigo-200"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+              ></path>
+            </svg>
+          </a>
+
+          <Modal />
+>>>>>>> b03cfbef25e3c6e832dccb6fcfcb8d3baf9ad9cb
         </div>
 
       </div>
-    </nav >
+    </nav>
   );
 }

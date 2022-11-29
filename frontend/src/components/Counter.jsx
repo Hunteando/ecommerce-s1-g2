@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { FaShoppingCart } from "react-icons/fa";
 
-
 function Counter({ stock, onAdd, initial = 1 }) {
   const [count, setCount] = useState(initial);
 
@@ -18,29 +17,24 @@ function Counter({ stock, onAdd, initial = 1 }) {
   };
 
   return (
-    <div className="mt-2">
-      <div className="flex justify-center items-center mb-1 ">
+    <div>
+      <div className="flex justify-center items-center border w-fit mx-auto border-#231E1A">
         <button
-          className="pb-1 px-3 border-solid border-r-0 border border-gray-500"
+          className="pb-[1px] bg-#terciario px-2 border-r border-#231E1A"
           onClick={decrease}
         >
-          <p>-</p>
+          -
         </button>
-        <h1 className="pb-1 px-6 border-solid border-r-0 border border-gray-500">
-          {count}
-        </h1>
-        <button
-          className="pb-1 flex h-auto align-center px-3 border-solid border border-gray-500"
-          onClick={increase}
-        >
-          <p>+</p>
+        <h1 className="pb-[1px] bg-#terciario px-3 border-r border-#231E1A">{count}</h1>
+        <button className="pb-[1px] bg-#terciario px-2" onClick={increase}>
+          +
         </button>
       </div>
       <button
-        className="w-full flex items-center justify-center py-2 bg-gray-400"
+        className="mt-2 mx-auto p-2 rounded flex items-center uppercase  justify-center text-[11px] text-white bg-#primario"
         onClick={() => onAdd(count)}
       >
-        <FaShoppingCart className="mr-2" />
+        <FaShoppingCart className="text-white mr-1" size={15} />
         Añadir al carrito
       </button>
     </div>

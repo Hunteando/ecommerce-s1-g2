@@ -1,10 +1,8 @@
-
 // componentes
 
-// Boton iniciar seccion Usuario Modal
-import Modal from "../components/Modal";
+// componente navbar
+import Navbar from "../components/Navbar";
 
-// componente slider
 import Slider from "../components/Slider";
 
 import ProductsRow from "../components/NuestrosProductosRow";
@@ -13,31 +11,37 @@ import Contact from "../components/Contact";
 
 import MenuRow from "../components/MenuRow";
 
+//componente watsapp
+import Whatsapp from "../components/Whatsapp";
+
 //Footer
 import Footer from "../components/Footer";
 
 //imagenes
 import image2 from "../assests/images/image1.jpg";
 
-
-
-
 function Home() {
-
   return (
+<<<<<<< HEAD
     <div name="home">
 
       {/* <div>
         <Modal />
       </div> */}
 
+=======
+    <div>
+      <Navbar />
+>>>>>>> b03cfbef25e3c6e832dccb6fcfcb8d3baf9ad9cb
       <Slider />
-
       <MenuRow title="MENÚ" routePath="menu" />
-
       <ProductsRow title="NUESTROS PRODUCTOS" routePath="nuestros-productos" />
+<<<<<<< HEAD
 
       <div className="md:h-[400px] px-6 text-center">
+=======
+      <div className="px-6 text-center">
+>>>>>>> b03cfbef25e3c6e832dccb6fcfcb8d3baf9ad9cb
         <p className="font-medium uppercase md:font-bold md:text-[32px]">
           ¡COMPARTE EL SABOR DE LAS EMPANADAS CASERAS!
         </p>
@@ -70,9 +74,8 @@ function Home() {
         </div>
       </div>
       <Contact />
-
+      <Whatsapp />
       <Footer />
-
     </div>
   );
 }
