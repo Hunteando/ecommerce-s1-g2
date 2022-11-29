@@ -2,23 +2,6 @@ import { Button } from "@material-tailwind/react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
-<<<<<<< HEAD
-function Modal() {
-    return (
-        <div className="modal">
-            <div className="contenedor">
-                <header>¡Registrate</header>
-                <label for="btn-modal">x</label>
-                <div className="contenido">
-                    name
-                </div>
-            </div>
-        </div>
-    );
-}
-
-export default Modal;
-=======
 export default function Modal() {
   const [showModal, setShowModal] = useState(false);
   return (
@@ -133,4 +116,3 @@ export default function Modal() {
     </>
   );
 }
->>>>>>> b03cfbef25e3c6e832dccb6fcfcb8d3baf9ad9cb

@@ -22,26 +22,12 @@ import image2 from "../assests/images/image1.jpg";
 
 function Home() {
   return (
-<<<<<<< HEAD
-    <div name="home">
-
-      {/* <div>
-        <Modal />
-      </div> */}
-
-=======
     <div>
       <Navbar />
->>>>>>> b03cfbef25e3c6e832dccb6fcfcb8d3baf9ad9cb
       <Slider />
       <MenuRow title="MENÚ" routePath="menu" />
       <ProductsRow title="NUESTROS PRODUCTOS" routePath="nuestros-productos" />
-<<<<<<< HEAD
-
-      <div className="md:h-[400px] px-6 text-center">
-=======
       <div className="px-6 text-center">
->>>>>>> b03cfbef25e3c6e832dccb6fcfcb8d3baf9ad9cb
         <p className="font-medium uppercase md:font-bold md:text-[32px]">
           ¡COMPARTE EL SABOR DE LAS EMPANADAS CASERAS!
         </p>

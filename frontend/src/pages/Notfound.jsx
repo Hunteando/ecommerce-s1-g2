@@ -4,13 +4,6 @@ import paginanoencontrada from "../assests/images/paginanoencontrada.jpg";
 import Navbar from "../components/Navbar";
 
 function Notfound() {
-<<<<<<< HEAD
-    return (
-        <div>
-            <img src={paginanoencontrada} />
-        </div>
-    );
-=======
   return (
     <>
       <Navbar />
@@ -22,7 +15,6 @@ function Notfound() {
       </div>
     </>
   );
->>>>>>> b03cfbef25e3c6e832dccb6fcfcb8d3baf9ad9cb
 }
 
 export default Notfound;

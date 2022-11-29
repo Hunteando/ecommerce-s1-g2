@@ -13,15 +13,6 @@ function CardProduct({ data }) {
   const [showIngredients, setShowIngredients] = useState(false);
 
   return (
-<<<<<<< HEAD
-    <div className=" w-40 relative">
-      <div className="icons absolute text-white flex mt-1 mr-1 right-0 gap-2">
-        <MdDelete size={20} />
-        <Link to="/editar-producto">
-          <MdModeEditOutline size={20} />
-        </Link>
-      </div>
-=======
     <div className="w-40 relative">
       {isConnected ? (
         <div className="icons absolute text-white flex mt-1 mr-1 right-0 gap-2">
@@ -49,13 +40,14 @@ function CardProduct({ data }) {
       )}
 
       {showIngredients && (
-        <div className="absolute top-0 left-0 right-0 bottom-0 p-3 bg-#FBD1A1 text-white flex flex-col items-center justify-center">
-          <h4 className="text-sm font-medium mb-4">Ingredientes</h4>
-          <p className="text-xs text-center">{data.ingredients}</p>
+        <div className="absolute top-0 left-0 right-0 bottom-0 bg-white text-#231E1A">
+          <div className="absolute top-0 bottom-0 bg-#FBD1A1/[0.48] flex flex-col items-center justify-center">
+            <h4 className="text-sm font-medium mb-4">Ingredientes</h4>
+            <p className="text-xs text-center">{data.ingredients}</p>
+          </div>
         </div>
       )}
 
->>>>>>> b03cfbef25e3c6e832dccb6fcfcb8d3baf9ad9cb
       <div className="w-full rounded-lg shadow-md lg:max-w-sm">
         <img
           className="object-cover w-40 h-28 rounded-t"
