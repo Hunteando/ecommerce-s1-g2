@@ -6,7 +6,7 @@ function RowProductCard({ routePath }) {
   const { width } = WindowSizeHook();
 
   return routePath === "menu" ? (
-    <div className="grid grid-cols-2 gap-4 mb-8 md:grid-cols-3 justify-items-center">
+    <div name='menu' className="grid grid-cols-2 gap-4 mb-8 md:grid-cols-3 justify-items-center">
       <div className="rounded overflow-hidden shadow-lg md:w-44 md:h-64	">
         <Link to="/category/veganas">
           <img src={image1} alt="Mountain" className="md:h-44 md:object-cover" />

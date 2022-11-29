@@ -1,22 +1,22 @@
 import { useState } from "react";
-
+import Logo from '../assests/images/logo-masa-mia.png'
 // Boton iniciar seccion Usuario Modal
 import Modal from "../components/Modal";
+import { Link } from 'react-scroll'
 
 export default function NavBar() {
   const [navbar, setNavbar] = useState(false);
-
   const [open, setOpen] = useState(false);
 
   const handleOpen = () => setOpen(!open);
 
   return (
-    <nav className="w-full bg-purple-500 sticky top-0">
+    <nav className="w-full bg-#terciario sticky top-0">
       <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
             <a href="#">
-              <h2 className="text-2xl font-bold text-white">LOGO</h2>
+              <img src={Logo} alt="Logo Image" style={{ width: '50px' }} />
             </a>
             <div className="md:hidden">
               <button
@@ -26,7 +26,7 @@ export default function NavBar() {
                 {navbar ? (
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="w-6 h-6 text-white"
+                    className="w-6 h-6 text-black"
                     viewBox="0 0 20 20"
                     fill="currentColor"
                   >
@@ -39,7 +39,7 @@ export default function NavBar() {
                 ) : (
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="w-6 h-6 text-white"
+                    className="w-6 h-6 text-black"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -58,9 +58,8 @@ export default function NavBar() {
         </div>
         <div>
           <div
-            className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
-              navbar ? "block" : "hidden"
-            }`}
+            className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${navbar ? "block" : "hidden"
+              }`}
           >
             <div className="items-center justify-center pb-6 md:pb-0 md:pt-1 md:flex">
               <div className="relative">
@@ -91,21 +90,36 @@ export default function NavBar() {
             </div>
 
             <ul className="items-center justify-center space-y-7 md:flex md:space-x-11 md:space-y-0 md:pt-4 md:pb-2">
-              <li className="text-white hover:text-indigo-200 ">
-                <a href="#">Inicio</a>
+              <li className="text-[#4b433e] hover:text-#primario">
+                <Link to="inicio" smooth={true} duration={500} >
+                  <a href="#">Inicio</a>
+                </Link>
+
               </li>
-              <li className="text-white hover:text-indigo-200">
-                <a href="#">Productos</a>
+              <li className="text-[#4b433e] hover:text-#primario">
+                <Link to="menu" smooth={true} duration={500} >
+                  <a href="#">Productos</a>
+                </Link>
               </li>
-              <li className="text-white hover:text-indigo-200">
-                <a href="#">Menú</a>
+
+              <li className="text-[#4b433e] hover:text-#primario">
+                <Link to="inicio" smooth={true} duration={500} >
+                  <a href="#">Menú</a>
+                </Link>
               </li>
-              <li className="text-white hover:text-indigo-200">
-                <a href="#">Nosotros</a>
+
+              <li className="text-[#4b433e] hover:text-#primario">
+                <Link to="nosotros" smooth={true} duration={500} >
+                  <a href="#">Nosotros</a>
+                </Link>
               </li>
-              <li className="text-white hover:text-indigo-200">
-                <a href="#">Contacto</a>
+
+              <li className="text-[#4b433e] hover:text-#primario">
+                <Link to="contacto" smooth={true} duration={500} >
+                  <a href="#">Contacto</a>
+                </Link>
               </li>
+
             </ul>
           </div>
         </div>
@@ -113,7 +127,7 @@ export default function NavBar() {
         <div className="hidden space-x-2 md:flex">
           <a href="#">
             <svg
-              className="w-10 h-6 text-gray-200 hover:text-indigo-200"
+              className="w-10 h-6  text-[#4b433e] hover:text-#primario"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"

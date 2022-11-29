@@ -21,7 +21,7 @@ import sage from "../assests/images/sage.png";
 function footer() {
   return (
     <>
-      <div className="container">
+      <div name='nosotros' className="container">
         <div className="item" id="item1">
           <img className="logo" src={sage} alt="sage" />
 

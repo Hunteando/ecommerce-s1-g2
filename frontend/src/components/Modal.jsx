@@ -7,12 +7,12 @@ export default function Modal() {
   return (
     <>
       <Button
-        className="bg-purple text-sm px-1 py-1 outline:none"
+        className="bg-purple text-[#4b433e] text-sm px-1 py-1 outline:none"
         type="button"
         onClick={() => setShowModal(true)}
       >
         <svg
-          className="w-6 h-6  hover:text-indigo-200 "
+          className="w-6 h-6 hover:text-#primario "
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
