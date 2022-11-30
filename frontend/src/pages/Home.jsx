@@ -11,10 +11,8 @@ import Contact from "../components/Contact";
 
 import MenuRow from "../components/MenuRow";
 
-
-
 //Footer
-import Footer from "../components/Footer";
+import Foot from "../components/Foot";
 
 //imagenes
 import image2 from "../assests/images/image1.jpg";
@@ -59,13 +57,8 @@ function Home() {
         </div>
       </div>
       <Contact />
-<<<<<<< HEAD
 
-
-=======
-      <Whatsapp />
->>>>>>> b556021bbd6c34bfd5ec572878024049cd5a652b
-      <Footer />
+      <Foot />
     </div>
   );
 }
