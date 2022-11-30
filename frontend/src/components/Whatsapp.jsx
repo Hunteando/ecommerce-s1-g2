@@ -1,4 +1,3 @@
-import '../css/Walink.css';
 import walink from "../assests/images/walink.png";
 
 function Whatsapp() {
@@ -6,7 +5,7 @@ function Whatsapp() {
 		<>
 			<div>
        <a href="https://api.whatsapp.com/send?phone=573058513904&text=Hola quiero mas informacion">
-         <img className="App-walink" src={walink} alt="walink"/>
+         <img className="z-1 bottom-1 left-20px bottom-20 fixed " src={walink} alt="walink"/>
        </a>
       </div>
 		</>

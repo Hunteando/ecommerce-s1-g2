@@ -12,8 +12,7 @@ import Contact from "../components/Contact";
 
 import MenuRow from "../components/MenuRow";
 
-//componente watsapp
-import Whatsapp from "../components/Whatsapp";
+
 
 //Footer
 import Footer from "../components/Footer";
@@ -72,7 +71,6 @@ function Home() {
       
       <Contact />
 
-      <Whatsapp/>
 
       <Footer />
 
