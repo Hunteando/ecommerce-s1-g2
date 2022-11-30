@@ -40,9 +40,11 @@ function CardProduct({ data }) {
       )}
 
       {showIngredients && (
-        <div className="absolute top-0 left-0 right-0 bottom-0 p-3 bg-#FBD1A1 text-white flex flex-col items-center justify-center">
-          <h4 className="text-sm font-medium mb-4">Ingredientes</h4>
-          <p className="text-xs text-center">{data.ingredients}</p>
+        <div className="absolute top-0 left-0 right-0 bottom-0 bg-white text-#231E1A">
+          <div className="absolute top-0 bottom-0 bg-#FBD1A1/[0.48] flex flex-col items-center justify-center">
+            <h4 className="text-sm font-medium mb-4">Ingredientes</h4>
+            <p className="text-xs text-center">{data.ingredients}</p>
+          </div>
         </div>
       )}
 
@@ -52,9 +54,9 @@ function CardProduct({ data }) {
           src={data.image}
           alt="product"
         />
-        <div className="py-2 text-center bg-#F79E38/[.47]">
+        <div className="py-2 text-center bg-#secundario/[.47]">
           <h4 className="text-sm font-medium uppercase text-#231E1A">{data.name}</h4>
-          <p className="mb-2 font-bold text-#231E1A">${data.price}</p>
+          <p className="mb-1 font-bold text-#231E1A">${data.price}</p>
           <Counter stock={stock} />
         </div>
       </div>

@@ -24,7 +24,13 @@ import massamiacl from "../assests/images/massamiacl.png";
 function footer() {
   return (
     <>
+<<<<<<< HEAD
     <footer className="content-center mx-auto py-12 bg-white-200 p-2  ">
+=======
+      <div name='nosotros' className="container">
+        <div className="item" id="item1">
+          <img className="logo" src={sage} alt="sage" />
+>>>>>>> b556021bbd6c34bfd5ec572878024049cd5a652b
 
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 ">
 

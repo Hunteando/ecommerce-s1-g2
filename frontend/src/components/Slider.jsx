@@ -28,7 +28,7 @@ function Slider() {
           className="mb-6 -z-10"
         >
           <SwiperSlide>
-            <div
+            <div name='inicio'
               style={{
                 background: `url(${image1}) center no-repeat`,
                 backgroundSize: "cover",
