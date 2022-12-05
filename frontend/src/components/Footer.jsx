@@ -36,7 +36,7 @@ function footer() {
 <div className="mb-5 inline space-x-1">
 <div className=" content-center">
     <blockque className=" absolute relative p-8 content-center ">
-            <img className=" w-20" src={ massamiacl } alt=" massamiacl " />
+            <img className=" w-20 " src={ massamiacl } alt=" massamiacl " />
         </blockque>
 </div>
 
