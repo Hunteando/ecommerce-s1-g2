@@ -12,7 +12,7 @@ import Contact from "../components/Contact";
 import MenuRow from "../components/MenuRow";
 
 //Footer
-import Foot from "../components/Foot";
+import Footer from "../components/Footer";
 
 //imagenes
 import image2 from "../assests/images/image1.jpg";
@@ -58,7 +58,7 @@ function Home() {
       </div>
       <Contact />
 
-      <Foot />
+      <Footer />
     </div>
   );
 }
