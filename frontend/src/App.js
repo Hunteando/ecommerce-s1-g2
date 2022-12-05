@@ -14,7 +14,7 @@ import AgregarProducto from "./pages/AgregarProducto";
 import EditarProducto from "./pages/EditarProducto";
 
 //Pagina no encontrada:
-import Notfound from './pagenotfound/Notfound'
+import Notfound from './pagenotfound/Notfound';
 
 function App() {
   return (

@@ -23,7 +23,7 @@ function Contact() {
 
   return (
     <div name='contacto' className="p-6 flex flex-col gap-4 md:gap-8 justify-center pt-6 md:flex-row">
-      <img src={logoMasaMia} alt="logo masa mia" width={65} className="mx-auto" />
+      <img src={logoMasaMia} alt="logo masa mia" className="mx-auto w-80" />
       <div className="text-left">
         <h2 className="font-medium text-xl mb-1 uppercase md:font-extrabold md:text-4xl">
           Contacto
