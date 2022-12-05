@@ -87,7 +87,7 @@ export default function Modal() {
                   <div>
                     <button
                       type="submit"
-                      className="group relative flex w-min justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2; transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 ..."
+                      className="group relative flex w-min justify-center rounded-md border border-transparent bg-[#C96C26] py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2; transition ease-in-out delay-150 bg-[#C96C26] hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 ..."
                     >
                       Ingresar
                     </button>
