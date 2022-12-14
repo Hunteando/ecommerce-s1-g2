@@ -56,6 +56,7 @@ export default function Modal() {
 
                 <div className="grid gap-x-8 gap-y-4  flex justify-center ">
 
+                  {/*metodo GET para pedir peticion al Backend*/}
                   <form action="/" method="GET">
 
                   <div>
