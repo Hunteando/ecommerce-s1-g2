@@ -60,14 +60,13 @@ export default function Modal() {
                   <form action="/" method="GET">
 
                   <div>
-                    <label htmlFor="email-address" className="sr-only" >
+                    <label htmlFor="email" className="sr-only" >
                       Email address
                     </label>
 
                     <input
                       id="email-address"
                       name="email-address"
-
                       type="email"
                       autoComplete="email"
                       required
@@ -75,16 +74,15 @@ export default function Modal() {
                       placeholder="Email address"
                     />
                   </div>
-
+                  <br />
                   <div>
                     <label htmlFor="password" className="sr-only" for="password">
                       Password
                     </label>
+
                     <input
                       id="password"
-
                       name="password"
-
                       type="password"
                       autoComplete="current-password"
                       required
@@ -92,6 +90,7 @@ export default function Modal() {
                       placeholder="Password"
                     />
                   </div>
+                  <br />
                   <div>
                     <button
                       type="submit"
@@ -100,7 +99,9 @@ export default function Modal() {
                       Ingresar
                     </button>
                   </div>
-        </form>
+                  
+                  <br />
+                  
                   <div>
                     <Link
                       to="/olvide"
@@ -109,6 +110,7 @@ export default function Modal() {
                       Olvide contraseña?
                     </Link>
                   </div>
+                  </form>
                 </div>
 
                 <div className="flex justify-between ...">
