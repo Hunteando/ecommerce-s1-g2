@@ -55,14 +55,18 @@ export default function Modal() {
                 <input type="hidden" name="remember" defaultValue="true" />
 
                 <div className="grid gap-x-8 gap-y-4  flex justify-center ">
+
+                  <form action="/" method="GET">
+
                   <div>
-                    <label htmlFor="email-address" className="sr-only">
+                    <label htmlFor="email-address" className="sr-only" >
                       Email address
                     </label>
 
                     <input
                       id="email-address"
-                      name="email"
+                      name="email-address"
+
                       type="email"
                       autoComplete="email"
                       required
@@ -70,13 +74,16 @@ export default function Modal() {
                       placeholder="Email address"
                     />
                   </div>
+
                   <div>
-                    <label htmlFor="password" className="sr-only">
+                    <label htmlFor="password" className="sr-only" for="password">
                       Password
                     </label>
                     <input
                       id="password"
+
                       name="password"
+
                       type="password"
                       autoComplete="current-password"
                       required
@@ -92,6 +99,7 @@ export default function Modal() {
                       Ingresar
                     </button>
                   </div>
+        </form>
                   <div>
                     <Link
                       to="/olvide"
