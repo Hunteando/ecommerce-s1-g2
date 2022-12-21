@@ -23,28 +23,28 @@ function footer() {
   return (
     <>
 
-    <footer className="content-center mx-auto py-12 bg-white-200 p-2  ">
+    <footer class="content-center mx-auto py-12 bg-white-200 p-2  ">
 
-    <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 ">
+    <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 ">
 
-<div className="mb-5">
+<div class="mb-5">
 
 <Whatsapp/> 
 
 </div>
 
-<div className="mb-5 inline space-x-1">
-<div className=" content-center">
-    <blockque className=" absolute relative p-8 content-center ">
-            <img className=" w-20 " src={ massamiacl } alt=" massamiacl " />
+<div class="mb-5 inline space-x-1">
+<div class=" content-center">
+    <blockque class="  absolute relative p-8 content-center ">
+            <img class=" w-20 z-0" src={ massamiacl } alt=" massamiacl " />
         </blockque>
 </div>
 
-<span className="inline text-center text-2x1 pb-4 text-black-100 font-bold">
+<span class="inline text-center text-2x1 pb-4 text-black-100 font-bold">
       Medios de pago    
   </span>
 
-  <blockquote className="flex space-x-1 static top-50px right-50px left-50px inline-block p-10px">
+  <blockquote class="flex space-x-1 static top-50px right-50px left-50px inline-block p-10px">
     <img  src={visa} alt="visa" />
 
     <img  src={mastercard} alt="mastercard" />
@@ -55,40 +55,40 @@ function footer() {
   </blockquote>            
 </div>
 
-<div className="mb-5 inline ">
+<div class="mb-5 inline ">
 
-<div className="space-x-1">
-  <p className="inline font-medium text-black-100">nosotros</p>
+<div class="space-x-1">
+  <p class="inline font-medium text-black-100">nosotros</p>
 
-            <p className="font-bold">Redes Sociales</p>
+            <p class="font-bold">Redes Sociales</p>
 
             <a href="https://www.instagram.com/masamia.cl/">
-              <img className="inline w-8" src={instagram} alt="instagram" />
+              <img class="inline w-8" src={instagram} alt="instagram" />
             </a>
 
             <a href="https://www.facebook.com/masamia.cl">
-              <img className=" inline w-8 static" src={meta} alt="meta" />
+              <img class=" inline w-8 static" src={meta} alt="meta" />
             </a>   
   </div>
 
   <div>&nbsp;</div>
             
-<div className="space-x-1">  
+<div class="space-x-1">  
 
-  <img className="inline" src={ubicacion} alt="ubicacion" />
-  <h1 className="inline" >Temuco,Chile</h1>
+  <img class="inline" src={ubicacion} alt="ubicacion" />
+  <h1 class="inline" >Temuco,Chile</h1>
 </div>
       
-<div className="space-x-1">              
-  <img className="inline" src={telefono} alt="telefono" />
+<div class="space-x-1">              
+  <img class="inline" src={telefono} alt="telefono" />
   <a href="tel:979432938">
-    <h1 className="inline">+56 979432938</h1>
+    <h1 class="inline">+56 979432938</h1>
   </a>
 </div>
   
-<div className="space-x-1">
-  <img className="inline" src={email} alt="email" />
-  <h1 className="inline">sinaisb1610@gmail.com</h1>
+<div class="space-x-1">
+  <img class="inline" src={email} alt="email" />
+  <h1 class="inline">sinaisb1610@gmail.com</h1>
 </div>
 
 </div>
