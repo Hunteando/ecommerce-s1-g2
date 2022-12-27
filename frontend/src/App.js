@@ -8,6 +8,9 @@ import Olvide from "./pages/Olvide";
 // Registro usuario
 import Registro from "./pages/Registro";
 
+// Carro de compras
+import Cart from "./pages/Cart"
+
 import NuestrosProductos from "./pages/NuestrosProductos";
 import Nosotros from "./pages/Nosotros";
 import AgregarProducto from "./pages/AgregarProducto";
@@ -29,6 +32,7 @@ function App() {
           <Route path="/nuestros-productos" element={<NuestrosProductos />} />
           <Route path="/agregar-producto" element={<AgregarProducto />} />
           <Route path="/editar-producto" element={<EditarProducto />} />
+          <Route path="/cart" element={<Cart />} />
           <Route path="/nosotros" element={<Nosotros />} />
         </Routes>
       </BrowserRouter>

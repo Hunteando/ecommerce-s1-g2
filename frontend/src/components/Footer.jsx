@@ -27,9 +27,10 @@ function footer() {
 
     <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 ">
 
-<div class="mb-5">
+    
+<div class="mb-5 justify-start flex-wrap	flex items-start">
 
-<Whatsapp/> 
+   <Whatsapp/> 
 
 </div>
 
@@ -73,20 +74,20 @@ function footer() {
 
   <div>&nbsp;</div>
             
-<div class="space-x-1">  
+<div class="space-x-1 flex-initial ">  
 
   <img class="inline" src={ubicacion} alt="ubicacion" />
   <h1 class="inline" >Temuco,Chile</h1>
 </div>
       
-<div class="space-x-1">              
+<div class="space-x-1 flex-initial">              
   <img class="inline" src={telefono} alt="telefono" />
   <a href="tel:979432938">
     <h1 class="inline">+56 979432938</h1>
   </a>
 </div>
   
-<div class="space-x-1">
+<div class="space-x-1 flex-initial ">
   <img class="inline" src={email} alt="email" />
   <h1 class="inline">sinaisb1610@gmail.com</h1>
 </div>

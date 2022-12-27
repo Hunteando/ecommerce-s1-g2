@@ -15,7 +15,7 @@ export default function NavBar() {
       <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
-            <a href="#">
+            <a href="http://localhost:3000">
               <img src={Logo} alt="Logo Image" style={{ width: '50px' }} />
             </a>
             <div className="md:hidden">
@@ -123,8 +123,9 @@ export default function NavBar() {
           </div>
         </div>
 
+      {/* Aqui  es carro de compras:*/}
         <div className="hidden space-x-2 md:flex">
-          <a href="#">
+          <a href="/cart"> 
             <svg
               className="w-10 h-6  text-[#4b433e] hover:text-#primario"
               fill="none"
