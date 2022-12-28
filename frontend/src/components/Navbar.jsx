@@ -1,14 +1,33 @@
 import { useState } from "react";
+
+//Imagen massamia
 import Logo from '../assests/images/logo-masa-mia.png'
+
 // Boton iniciar seccion Usuario Modal
 import Modal from "../components/Modal";
 import { Link } from 'react-scroll';
+import { useEffect } from "react";
 
 export default function NavBar() {
   const [navbar, setNavbar] = useState(false);
   const [open, setOpen] = useState(false);
 
   const handleOpen = () => setOpen(!open);
+
+
+  const [products,setProducts] = useState([]);
+  const [filters,setFilters] = useState([]);
+
+  useEffect(()=> {
+    const fetchProducts = async () => {
+      try{
+
+      }
+      catch(err){
+        
+      }
+    }
+  },[]);
 
   return (
     <nav className="w-full bg-[#EDDBB3] sticky top-0">
@@ -124,7 +143,7 @@ export default function NavBar() {
         </div>
 
       {/* Aqui  es carro de compras:*/}
-        <div className="hidden space-x-2 md:flex">
+        <div className="hidden space-x-2 md:flex ">
           <a href="/cart"> 
             <svg
               className="w-10 h-6  text-[#4b433e] hover:text-#primario"
@@ -140,6 +159,7 @@ export default function NavBar() {
                 d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
               ></path>
             </svg>
+            <span className='bg-blue-700 text-white w-5 h-5 rounded-full absolute top-4 rigth-5 leading-4 px-1'>0</span>
           </a>
 
           <Modal />
