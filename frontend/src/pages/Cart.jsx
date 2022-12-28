@@ -3,6 +3,7 @@ import Logo from '../assests/images/logo-masa-mia.png'
 
 export default function Cart() {
     return (
+      <>
       <header>
       <div class="flex justify-between ...">
         <div>&nbsp;</div>
@@ -31,8 +32,22 @@ export default function Cart() {
         <div>&nbsp;</div>
         <div>&nbsp;</div>
       </div>
-      
 </header>
-      
+<body>
+  <section>
+    {/*Productos Agregados al carro de compras*/}
+    <div>
+      kjl
+    </div>
+
+    {/*Botones eliminar producto ver precio Total*/}
+    <div>
+    <button></button>
+    <button>Eliminar Productos</button>
+  </div>
+  </section>
+  
+</body>
+</>  
     )
   }
