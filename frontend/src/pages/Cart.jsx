@@ -14,12 +14,24 @@ export default function Cart() {
       <a href="http://localhost:3000">
               <img src={Logo} alt="Logo Image" className='absolute left-5 top-5 h-16 w-16' />
             </a>
-        <div>01</div>
-        <div>02</div>
-        <div>Cart car
-          
-        </div>
+        <div>&nbsp;</div>
+        <div>&nbsp;</div>
+        <div>&nbsp;</div>
       </div>
+
+      {/*Shoping Cart*/}
+      
+      <div class="container mx-auto flex items-center justify-between py-5 ">
+        <hr />
+        <div>
+        <p class="font-mono text-2xl">
+          Carro de compras
+        </p>
+        </div>
+        <div>&nbsp;</div>
+        <div>&nbsp;</div>
+      </div>
+      
 </header>
       
     )
