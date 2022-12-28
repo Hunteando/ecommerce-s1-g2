@@ -4,16 +4,21 @@ export const productsInitialState = {
     products: [
         {
             "id":1,
-            "name": QUESOCHAMPIGNON,
-            "price": $300
+            "name": carnesuave,
+            "price": 300,
+            category: "clasicas"
         },
     {
         id:2,
-        "name":QUESOCHAMPIGNON,
-        "price": $300
+        "name":pino,
+        "price": 300,
+        category: "clasicas"
     },
     {
-
+        id: 3,
+        name: "jamón y queso",
+        "price": 300,
+        category: "clasicas"
     }
     ],
     cart: [],
@@ -34,6 +39,8 @@ export const reducerCart = (state, action)  => {
 
         }
         default:
-            return state
+            return state;
     }
+
+    throw Error("Unknown action:" +action.type)
 }
